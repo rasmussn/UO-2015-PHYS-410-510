@@ -4,7 +4,7 @@
 #
 # define environment variables (compilers/linker/libraries...)
 
-FC = gfortran
+FC = ifort
 FFLAGS = -c
 LIBS =
 
