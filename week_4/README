@@ -1,15 +1,18 @@
 Assignment for the week.
 
-1. Write a python program that will dump the contents of the file
+1. Write a python program that will create the file hello.txt
+   with several lines of plain text in the file.
+2. Write a python program that will dump the contents of the file
    hello.txt to the file stdout (the terminal screen).  If you
    google "python file io" you should find examples of how to write
    the code.  You could even "cheat" and call a unix shell program
    from python to dump the file.
-2. Write a Makefile with a check target that will run your python
-   program.  Don't forget the TAB character that MUST appear
-   before the line that runs your python program.  Something like
+3. Write a Makefile with a check target that will run the python
+   program that creates hello.txt.  Don't forget the TAB character
+   that MUST appear before the line that runs your python program.
+   Something like
 
-   TAB python your_program
+        TAB python your_program
 
-3. Commit your files to the directory week_4 in your repository and
+4. Commit your files to the directory week_4 in your repository and
    push the changes to your shared repository at github.com.
