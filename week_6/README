@@ -1,11 +1,12 @@
-WARNING: This assignment is not finished, check back later for
-final version.
-
 Assignment for the week.
 
-1. Integrate the function (to be determined) using random samples
-   of the function.
-2. Integrate same function using first order method.
-3. Integrate same function using second order method.
+1. Write a program to numerically integrate the function f(x) = x*x over
+   the interval [0,1] for each of the following methods:
 
+      a. Random sampling
+      b. Midpoint rule
+      c. Trapezoidal rule
+      d. Simpson's rule
 
+2. Plot the error for each method as a function of N, where N is the
+   number of random samples or the number intervals.
