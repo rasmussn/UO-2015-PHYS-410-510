@@ -8,5 +8,9 @@ Assignment for the week.
       c. Trapezoidal rule
       d. Simpson's rule
 
+   A description of these methods can be found in the ipython notebook,
+   numerical_integration.ipynb.  You can open the notebook on github.com
+   to read it.
+
 2. Plot the error for each method as a function of N, where N is the
-   number of random samples or the number intervals.
+   number of random samples (or the number intervals).
