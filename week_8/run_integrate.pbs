@@ -1,0 +1,47 @@
+#!/bin/bash -l
+
+## Lines preceded by "#PBS" are directives for Torque/PBS.
+##
+## Set the name of the batch job:
+##
+#PBS -N integrate
+
+## Submit job to a specific queue:
+## (see /INFO/queues.txt for a description of available queues)
+##
+#PBS -q generic
+
+## Request resources:
+##    1 nodes and 1 processor(s) per node
+##   10 min
+##
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=00:00:10
+
+## Set directory list:
+##
+#PBS -d /your_home_directory_path/week_8
+#PBS -o /your_home_directory_path/week_8
+#PBS -e /your_home_directory_path/week_8
+
+## Set up to receive email when finished:
+##
+#PBS -m ea
+#PBS -M your_email_address
+
+## Load modules:
+## (see /INFO/modules-howto.txt for a mini-howto on Modules)
+
+module load python
+
+## Execute a program using normal shell commands:
+##
+cd /your_home_directory_path/week_8
+python integrate.py
+
+## Look at free nodes with the pbsnodes command, e.g.,
+##
+## pbsnodes -l "free"
+##
+## Other options are:
+##    ("active", "all", "busy", "down", "free", "offline", "unknown", "up")
