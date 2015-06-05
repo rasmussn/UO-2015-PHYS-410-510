@@ -1,10 +1,10 @@
 FC = mpif90
-CC = mpicc
+CC = cc
 
-all : mpi_ring mpi_ring_c
+all : hello mpi_ring
 
-mpi_ring_c : ring.c
-	$(CC) -g -o mpi_ring_c ring.c
+hello : hello.c
+	$(CC) -g -o hello hello.c
 
 mpi_ring : mpi_ring.o
 	gfortran -o mpi_ring mpi_ring.o
@@ -18,4 +18,4 @@ check : mpi_ring
 	@mpirun -np 8 mpi_ring
 
 clean :
-	rm -f *.o *.mod mpi_ring mpi_ring_c
+	rm -f *.o *.mod mpi_ring hello
