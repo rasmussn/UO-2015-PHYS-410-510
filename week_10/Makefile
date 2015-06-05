@@ -9,8 +9,8 @@ hello : hello.c
 mpi_ring : mpi_ring.o
 	gfortran -o mpi_ring mpi_ring.o
 
-mpi_ring.o : mpi_ring.F90
-	$(FC) -c -g mpi_ring.F90
+mpi_ring.o : mpi_ring.f90
+	$(FC) -c -g mpi_ring.f90
 
 check : mpi_ring
 	@echo "Running mpi_ring ..."
